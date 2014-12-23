@@ -1,7 +1,7 @@
 defmodule ElixirNifTest do
   use ExUnit.Case
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "integer_one returns 1" do
+    assert ElixirNif.integer_one == 1
   end
 end

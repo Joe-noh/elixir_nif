@@ -5,6 +5,7 @@ defmodule ElixirNif.Mixfile do
     [app: :elixir_nif,
      version: "0.0.1",
      elixir: "~> 1.0",
+     compilers: [:elixir, :nif, :app],
      deps: deps]
   end
 
