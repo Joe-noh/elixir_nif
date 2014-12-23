@@ -1,0 +1,2 @@
+defmodule ElixirNif do
+end
