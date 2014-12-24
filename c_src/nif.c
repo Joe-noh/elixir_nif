@@ -1,6 +1,10 @@
+#include "sqlite3.h"
 #include "erl_nif.h"
 
 static ERL_NIF_TERM integer_one_nif(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[]) {
+    sqlite3* dp = NULL;
+    int ret = sqlite3_open(":memory:", &dp);
+
     return enif_make_int(env, 1);
 }
 
