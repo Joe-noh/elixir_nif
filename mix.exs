@@ -1,3 +1,5 @@
+Code.require_file "lib/mix/tasks/compile.nif.ex"
+
 defmodule ElixirNif.Mixfile do
   use Mix.Project
 
@@ -5,7 +7,7 @@ defmodule ElixirNif.Mixfile do
     [app: :elixir_nif,
      version: "0.0.1",
      elixir: "~> 1.0",
-     compilers: [:elixir, :nif, :app],
+     compilers: [:nif, :elixir, :app],
      deps: deps]
   end
 
